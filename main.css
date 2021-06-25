@@ -1,0 +1,65 @@
+@keyframes move {
+    0% {
+        bottom: 30%;
+        left: 50%;
+    }
+    10% {
+        bottom: -20%;
+        left: -50%;
+    }
+    30% {
+        bottom: 37%;
+        left: 12%;
+    }
+    60% {
+        bottom: -60%;
+        left: -28%;
+    }
+    100% {
+        bottom: 0%;
+        left: 0%;
+    }
+}
+
+.card {
+    transition: ease-in-out 0.8s;
+    box-shadow: 0px 0px 15px red;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 35px rgb(0, 60, 255) inset;
+}
+.hiddenInput {
+    display: none;
+}
+#contactForm {
+    transition: 1s;
+    position: fixed;
+    top: 5vh;
+    width: 80vw;
+    left: 10vw;
+    background-color: gray;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#contactForm.hidden {
+    top: -100vw;
+}
+tr {
+    transition: 0.5s;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.452) inset;
+}
+tr:nth-child(odd) {
+    background-color: rgb(243, 149, 95);
+}
+tr:nth-child(even) {
+    background-color: rgb(138, 149, 247);
+}
+tr:hover {
+    box-shadow: 0px 0px 32px rgb(255, 255, 255) inset;
+}
+td {
+    border: 1px solid rgb(177, 177, 177);
+}
